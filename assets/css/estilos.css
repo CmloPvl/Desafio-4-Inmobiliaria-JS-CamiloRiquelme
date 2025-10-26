@@ -1,4 +1,4 @@
-/* ================== ROOT / VARIABLES ================== */
+
 :root {
   --celadon: #afd5aa;
   --white-smoke: #f0f2ef;
@@ -7,7 +7,6 @@
   --rose-taupe: #8c6057;
 }
 
-/* ================== RESET / BODY ================== */
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +20,6 @@ body {
   line-height: 1.6;
 }
 
-/* ================== NAVBAR ================== */
 .navbar {
   display: flex;
   justify-content: space-evenly;
@@ -32,7 +30,7 @@ body {
 }
 
 .navbar .logo {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: var(--walnut-brown);
   text-decoration: none;
@@ -40,7 +38,7 @@ body {
 
 .nav-buttons .btn {
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 2rem;
   margin-left: 0.5rem;
   border-radius: 5px;
   border: none;
@@ -48,6 +46,7 @@ body {
   color: var(--walnut-brown);
   background-color: var(--white-smoke);
   transition: all 0.3s ease;
+  font-size: 1.5rem;
 }
 
 .nav-buttons .btn:hover {
@@ -60,7 +59,6 @@ body {
   color: white;
 }
 
-/* ================== HEADER ================== */
 header {
   background-image: url('../imgs/header3.jpg'); /* aquí cargas tu fondo */
   background-size: cover;
@@ -79,7 +77,6 @@ header h1 {
   text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
 }
 
-/* ================== MAIN / SECTIONS ================== */
 main {
   padding: 2rem;
 }
@@ -89,7 +86,7 @@ section {
 }
 
 section h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--walnut-brown);
   margin-bottom: 1rem;
   border-bottom: 2px solid var(--rose-taupe);
@@ -97,7 +94,6 @@ section h2 {
   padding-bottom: 0.2rem;
 }
 
-/* ================== CARDS ================== */
 .cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -131,20 +127,19 @@ section h2 {
 }
 
 .card-body h3 {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   margin-bottom: 0.5rem;
 }
 
 .card-body p {
   margin-bottom: 0.3rem;
-  font-size: 0.95rem;
+  font-size: 1.2rem;
 }
 
 .card-body p:last-child {
   margin-bottom: 0;
 }
 
-/* ================== BUTTONS SECTION ================== */
 section a.btn {
   display: inline-block;
   padding: 0.7rem 1.5rem;
@@ -155,23 +150,22 @@ section a.btn {
   font-weight: bold;
   border-radius: 5px;
   transition: all 0.3s ease;
+  font-size: 1.3rem;
 }
 
 section a.btn:hover {
   background-color: var(--rose-taupe);
 }
 
-/* ================== FOOTER ================== */
 
 footer {
   background-color: var(--walnut-brown);
   color: white;
   text-align: center;
   padding: 1rem;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
 }
 
-/* ================== RESPONSIVE ================== */
 @media (max-width: 768px) {
   header h1 {
     font-size: 2rem;

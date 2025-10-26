@@ -1,4 +1,4 @@
-// Arreglo completo de propiedades en alquiler
+
 const propiedades_alquiler = [
   {
     nombre: "Oporto",
@@ -94,5 +94,4 @@ function renderPropiedades(arrayPropiedades, contenedorID) {
   });
 }
 
-// Renderizamos las propiedades en el contenedor de la página alquiler
 renderPropiedades(propiedades_alquiler, "alquiler-container");

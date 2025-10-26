@@ -1,4 +1,4 @@
-// Propiedades en venta (primeras 3 visibles en index)
+
 const propiedades_venta = [
   {
     nombre: "Barcelona",
@@ -35,7 +35,6 @@ const propiedades_venta = [
   }
 ];
 
-// Propiedades en alquiler (primeras 3 visibles en index)
 const propiedades_alquiler = [
   {
     nombre: "Oporto",
@@ -74,7 +73,7 @@ const propiedades_alquiler = [
 
 function renderPropiedades(arrayPropiedades, contenedorID) {
   const contenedor = document.getElementById(contenedorID);
-  contenedor.innerHTML = ""; // Limpiar contenido previo
+  contenedor.innerHTML = ""; 
 
   arrayPropiedades.forEach(prop => {
     contenedor.innerHTML += `
@@ -99,9 +98,6 @@ function renderPropiedades(arrayPropiedades, contenedorID) {
   });
 }
 
-
-// Mostrar las propiedades en venta
 renderPropiedades(propiedades_venta, "venta-container");
 
-// Mostrar las propiedades en alquiler
 renderPropiedades(propiedades_alquiler, "alquiler-container");

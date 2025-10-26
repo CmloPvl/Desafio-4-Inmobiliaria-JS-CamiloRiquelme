@@ -1,4 +1,4 @@
-// Arreglo de propiedades en venta
+
 const propiedades_venta = [
   {
     nombre: "Barcelona",
@@ -70,7 +70,7 @@ const propiedades_venta = [
 
 function renderPropiedades(arrayPropiedades, contenedorID) {
   const contenedor = document.getElementById(contenedorID);
-  contenedor.innerHTML = ""; // Limpiar contenido previo
+  contenedor.innerHTML = ""; 
 
   arrayPropiedades.forEach(prop => {
     contenedor.innerHTML += `
@@ -95,6 +95,4 @@ function renderPropiedades(arrayPropiedades, contenedorID) {
   });
 }
 
-
-// Llamada a la función para mostrar todas las propiedades en venta
 renderPropiedades(propiedades_venta, "venta-container");
